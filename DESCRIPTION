@@ -1,12 +1,14 @@
 Package: rpvta
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Access, play with PVTA data
 Version: 0.1
 Date: 2015-09-30
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Authors@R: person("Mark", "Hagemann", email = "mark.hagemann@gmail.com", role = c("aut", "cre"))
+Maintainer: Mark Hagemann <mark.hagemann@gmail.com>
+Description: A very minimal package for accessing PVTA API, some further functions.
+License: GPL 2.0
 LazyData: TRUE
-Imports: rjson
+Imports: rjson,
+    leaflet,
+    htmltools
 Depends: dplyr
