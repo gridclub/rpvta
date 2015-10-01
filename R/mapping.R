@@ -5,7 +5,8 @@
 #'
 #' @export
 leafletBusLocs <- function() {
-  data("busIcon")
+  busIcon = leaflet::makeIcon(system.file("icons", "bus.png", package = "rpvta"),
+                              iconWidth = 17, iconHeight = 17)
   m = vehicsToDf() %>%
     dplyr::filter_(~ Longitude > -74) %>%
     leaflet::leaflet() %>%
